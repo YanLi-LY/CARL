@@ -103,7 +103,7 @@ class Dataset(data.Dataset):
     def __len__(self):
         return self.length
 
-path=''
+path='./data/'
 
 train_loader=DataLoader(dataset=Dataset(path+'/RESIDE/ITS',train=True,size=crop_size),
                             batch_size=opt.bs, shuffle=True)
