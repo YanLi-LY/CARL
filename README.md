@@ -69,7 +69,3 @@ python test.py
   <summary>Figure 3: The dehazed results of different methods on the image with different hazy intensities.</summary>
   <img src="./img/haze_level.png"/>
 </details>
-
-
-
-
