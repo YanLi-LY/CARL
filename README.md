@@ -1,10 +1,9 @@
-# Single Image DehazingWith Consistent Contrast-Assisted Reconstruction Loss
+# Single Image Dehazing With Consistent Contrast-Assisted Reconstruction Loss
 
 ## Network Architecture
 ![Network Architecture](./img/framework.png)
 
 ## Dependencies
-- Ubuntu 16.04
 - Python >= 3.6
 - PyTorch >= 1.0
 - NVIDIA GPU+CUDA
@@ -13,9 +12,9 @@
 - **main.py** and **test.py** are the entry codes for training and testing, respectively.
 - **data_utils.py** is used to load the training and testing data.
 - **metrics.py** contains image quality evaluation metrics, i.e., PSNR and SSIM.
-- **option.py** contains all the options and configurations.
+- **option.py** contains all the options.
 - **utils.py** provides all the required utilities.
-- **./models/model.py** defines our proposed model.
+- **./models/model.py** defines the configurations of our proposed model.
 - **./losses/ContrastLoss.py** defines the contrastive loss.
 
 ## Datasets
@@ -24,7 +23,8 @@ Create folder "data" and download the datasets into "data" folder. The datasets 
 - [I-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//i-haze/)
 - [O-Haze](https://data.vision.ee.ethz.ch/cvl/ntire18//o-haze/)
 - [Dense-Haze](https://data.vision.ee.ethz.ch/cvl/ntire19//dense-haze/)
-##### Note: The above datasets can be used directly in our method without specific pre-processing.
+
+##### Note: The above datasets can be used directly in our method without the specific pre-processing.
 
 ## Pre-trained Models
 - [Google Drive](https://drive.google.com/drive/folders/19Ot3OG8MYyuUDXI7gn3sRaE-gWpGQV7o?usp=sharing)
@@ -41,7 +41,7 @@ python test.py
 
 ## Performance
 <details>
-  <summary>Table 1: Quantitative comparisons with SOTA methods on SOTSIndoor and SOTS-Outdoor synthetic datasets.</summary>
+  <summary>Table 1: Quantitative comparisons with SOTA methods on SOTS-Indoor and SOTS-Outdoor synthetic datasets.</summary>
   <img src="./img/SOTS.png"/>
 </details>
 
@@ -61,7 +61,7 @@ python test.py
 </details>
 
 <details>
-  <summary>Figure 2: Visual comparisons on SOTS-Indoor and SOTS-Outdoor dataset for different methods. First two rows: the dehazed results on SOTS-Indoor dataset. Latter two rows: the dehazed results on SOTS-Outdoor dataset.</summary>
+  <summary>Figure 2: Visual comparisons on SOTS-Indoor and SOTS-Outdoor datasets for different methods.</summary>
   <img src="./img/SOTS_img.png"/>
 </details>
 
