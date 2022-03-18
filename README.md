@@ -42,32 +42,32 @@ python test.py
 ## Performance
 <details>
   <summary>Table 1: Quantitative comparisons with SOTA methods on SOTSIndoor and SOTS-Outdoor synthetic datasets.</summary>
-  ![](./img/SOTS.png)
+  <img src="./img/SOTS.png"/>
 </details>
 
 <details>
   <summary>Table 2: Quantitative comparisons with SOTA methods on I-Haze, O-Haze and Dense-Haze real-world datasets.</summary>
-  ![](./img/I-O-Dense.png)
+  <img src="./img/I-O-Dense.png"/>
 </details>
 
 <details>
   <summary>Table 3: Ablation study of the proposed method with different components on SOTS-Indoor and Dense-Haze datasets.</summary>
-  ![](./img/loss.png)
+  <img src="./img/loss.png"/>
 </details>
 
 <details>
   <summary>Table 4: Parameter analysis on ITS dataset.</summary>
-  ![](./img/param.png)
+  <img src="./img/param.png"/>
 </details>
 
 <details>
   <summary>Figure 2: Visual comparisons on SOTS-Indoor and SOTS-Outdoor dataset for different methods. First two rows: the dehazed results on SOTS-Indoor dataset. Latter two rows: the dehazed results on SOTS-Outdoor dataset.</summary>
-  ![](./img/SOTS_img.png)
+  <img src="./img/SOTS_img.png"/>
 </details>
 
 <details>
   <summary>Figure 3: The dehazed results of different methods on the image with different hazy intensities.</summary>
-  ![](./img/haze_level.png)
+  <img src="./img/haze_level.png"/>
 </details>
 
 
