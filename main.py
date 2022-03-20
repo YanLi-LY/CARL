@@ -78,7 +78,7 @@ def train(backbone_model, ema_model, train_loader, test_loader, optim, criterion
                     per_loss = criterion[1](out, clear_img)
                     loss = l1_loss + 0.04 * per_loss
                 if opt.contrastloss:
-                    contrast_loss = criterion[1](clear_img, out, haze_1)
+                    contrast_loss = criterion[1](out, clear_img, haze_1)
                     loss = l1_loss + contrast_loss
             else:
                 out_1 = backbone_model(haze_1)
@@ -96,7 +96,7 @@ def train(backbone_model, ema_model, train_loader, test_loader, optim, criterion
                     per_loss = criterion[1](out_1, clear_img)
                     loss = loss + 0.04 * per_loss
                 if opt.contrastloss:
-                    contrast_loss = criterion[1](clear_img, out_1, haze_1, haze_2, other_method_out)
+                    contrast_loss = criterion[1](out_1, clear_img, haze_1, haze_2, other_method_out)
                     loss = loss + contrast_loss
 
             loss.backward()
